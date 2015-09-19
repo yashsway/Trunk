@@ -28,15 +28,17 @@
     <div class="main-text" id="header">
         <p id="title">Trunk</p>
     </div>
-    <div id="container">
-      <div class="item i1">Movies</div>
-      <div class="item i2">Books</div>
-      <div class="item i3">TV Shows</div>
-      <div class="item i4">Restaurants</div>
-      <div class="item i2">Pubs</div>
-      <div class="item i4">Bars</div>
-      <div class="item i1">Food</div>
-      <div class="item i2">Travel</div>
+    <div id="main-panel">
+      <div class="item i1"><img class="category-icons" src="assets/icons/cafes.png"></div>
+      <div class="item i2"><img class="category-icons" src="assets/icons/clubs.png"></div>
+      <div class="item i3"><img class="category-icons" src="assets/icons/games.png"></div>
+      <div class="item i4"><img class="category-icons" src="assets/icons/gifts.png"></div>
+      <div class="item i2"><img class="category-icons" src="assets/icons/ideas.png"></div>
+      <div class="item i4"><img class="category-icons" src="assets/icons/restaurants.png"></div>
+      <div class="item i1"><img class="category-icons" src="assets/icons/movies.png"></div>
+      <div class="item i2"><img class="category-icons" src="assets/icons/pubs.png"></div>
+      <div class="item i2"><img class="category-icons" src="assets/icons/shows.png"></div>
+      <div class="item i2"><img class="category-icons" src="assets/icons/travel.png"></div>
     </div>
         
     

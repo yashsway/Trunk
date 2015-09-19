@@ -24,27 +24,31 @@
     bottom: 0px;
     left: 0px;
     z-index: 150;
-    margin-bottom: 0px;
     width: 100%;
     background-color: #301330;
     box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.30);
 }
 #about {
     text-align: center;
-    margin-left: 45%;
     color: white;
-    position: absolute;
-    z-index: 100;
 }
-#container {
-    top: 150px;
+#main-panel {
+    z-index: -100;
+    margin: 55px 0px 0px 10px;
+}
+.category-icons {
+    width: 50px;
+    height: 50px;
     position: absolute;
+    margin-left: 25px;
+    margin-top: 25px;
 }
 .item {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   float: left;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+  opacity: 0.8;
+  /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);*/
 }
 .item.i1 { background: #2EC4B6; }
 .item.i2 { background: #E71D36; }

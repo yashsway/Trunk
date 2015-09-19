@@ -27,7 +27,7 @@ $(document).ready(function(){
     });
     
     //var $container = $('#container');
-    var $container = $('#container').packery();
+    var $container = $('#main-panel').packery();
     // init
     $container.packery({
       itemSelector: '.item',
@@ -40,4 +40,5 @@ $(document).ready(function(){
       // bind Draggabilly events to Packery
       $container.packery( 'bindDraggabillyEvents', draggie );
     });
+
 });
