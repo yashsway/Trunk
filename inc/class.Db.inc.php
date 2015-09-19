@@ -16,11 +16,6 @@ class Db {
         global $user;
         global $pass;
 
-        //Error display
-        //ini_set('display_errors',1);
-        //ini_set('display_startup_errors',1);
-        //error_reporting(-1);
-
         if($GLOBALS['appMode']==0){
             //Connection to test database
             $this->databaseConnection = mysqli_connect($servAddress,$user,$pass);
@@ -31,17 +26,18 @@ class Db {
     }
 
     public function fetchName(){
+        $id = 1;
         $ajaxQuery = $this->databaseConnection->prepare('SELECT name FROM test WHERE id = ?');
-        $ajaxQuery->bind_param("i",1);
+        $ajaxQuery->bind_param("i",$id);
         $ajaxQuery->execute();
 
         if(!$ajaxQuery){
-            return false;
+             return false;
         }
 
         $ajaxQuery->bind_result($na);
         while($ajaxQuery->fetch()){
-            $assoc_result[0]['name'] = $na;
+             $assoc_result[0]['name'] = $na;
         }
 
         return $assoc_result;

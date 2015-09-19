@@ -22,7 +22,7 @@ function ajaxRequest(reqScript, returnDataType, reqData, callback){
 //Page load
 $(document).ready(function(){
     var request = {reqType:0};
-    ajaxRequest("databaseButler.php","text",request,function(returnedData){
-        console.log(returnedData);
+    ajaxRequest("databaseButler.php","json",request,function(returnedData){
+        console.log(returnedData[0].name);
     });
-}
+});

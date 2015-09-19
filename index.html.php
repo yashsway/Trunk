@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!--Skeleton CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <!--UIKit-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/css/uikit.min.css" />
     <!--Custom Stylesheet-->
     <link rel="stylesheet" href="css/supplementary.css">
 </head>
@@ -25,11 +27,16 @@
     <div class="main-text" id="header">
         <p id="title">Trunk</p>
     </div>
-
+    <div class="uk-panel" id="test">
+        <div class="uk-panel-badge uk-badge">some</div>
+        <h3 class="uk-panel-title">Bla</h3>
+    </div>
     <div class="main-text" id="footer">
         <p id="about">Team No Sleep @Hack the North</p>
     </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/js/uikit.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
