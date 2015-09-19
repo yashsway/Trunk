@@ -1,3 +1,6 @@
+<?php
+    require_once("init.php");
+?>
 <html lang="en">
 
 <head>
@@ -5,7 +8,7 @@
     <title>Trunk</title>
     <meta name="description" content="Stuff I wana remember">
     <meta name="author" content="Team No Sleep">
-	<link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png">
     <!--mobile viewport optimization-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Web Fonts-->
@@ -22,9 +25,11 @@
     <div class="main-text" id="header">
         <p id="title">Trunk</p>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <div class="main-text" id="footer">
         <p id="about">Team No Sleep @Hack the North</p>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
