@@ -27,10 +27,6 @@
     <div class="main-text" id="header">
         <p id="title">Trunk</p>
     </div>
-    <div class="uk-panel" id="test">
-        <div class="uk-panel-badge uk-badge">some</div>
-        <h3 class="uk-panel-title">Bla</h3>
-    </div>
     <div class="main-text" id="footer">
         <p id="about">Team No Sleep @Hack the North</p>
     </div>
