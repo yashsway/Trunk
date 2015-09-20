@@ -1,6 +1,11 @@
 .item {
+<<<<<<< HEAD
   width: 100px;
   height: 100px;
+=======
+/*  width: 118px;
+  height: 118px;*/
+>>>>>>> 0251d58d8345f5a1318e08e16251677417c621a7
   float: left;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
 }
