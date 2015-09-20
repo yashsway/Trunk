@@ -25,7 +25,7 @@ class Db {
         }
     }
 
-    public function fetchName(){
+    /*public function fetchName(){
         $id = 1;
         $ajaxQuery = $this->databaseConnection->prepare('SELECT name FROM test WHERE id = ?');
         $ajaxQuery->bind_param("i",$id);
@@ -41,7 +41,7 @@ class Db {
         }
 
         return $assoc_result;
-    }
+    }*/
     
     public function itemFetch($id){
         $ajaxQuery = $this->databaseConnection->prepare('SELECT * FROM items WHERE itemsKey = ?');
@@ -57,6 +57,21 @@ class Db {
              $assoc_result[0]['name'] = $na;
         }*/
         
+        $result = $ajaxQuery->get_result();
+        while($row=$result->fetch_assoc()){
+            $assoc_result[] = $row;
+        }
+        return $assoc_result;
+    }
+    
+    public function catsFetch(){
+        $ajaxQuery = $this->databaseConnection->prepare('SELECT name FROM cases');
+        $ajaxQuery->execute();
+ 
+        if(!$ajaxQuery){
+             return $assoc_result[0]['error'] = 'Query fail';
+        }
+ 
         $result = $ajaxQuery->get_result();
         while($row=$result->fetch_assoc()){
             $assoc_result[] = $row;

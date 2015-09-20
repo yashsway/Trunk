@@ -22,23 +22,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!--Custom Stylesheet-->
     <link rel="stylesheet" href="css/supplementary.css">
+    <link rel="stylesheet" href="css/categories.css">
 </head>
 
 <body>
     <div class="main-text" id="header">
         <p id="title">Trunk</p>
     </div>
-    <div id="main-panel">
-      <div class="item i1"><img class="category-icons" src="assets/icons/cafes.png"></div>
-      <div class="item i2"><img class="category-icons" src="assets/icons/clubs.png"></div>
-      <div class="item i3"><img class="category-icons" src="assets/icons/games.png"></div>
-      <div class="item i4"><img class="category-icons" src="assets/icons/gifts.png"></div>
-      <div class="item i2"><img class="category-icons" src="assets/icons/ideas.png"></div>
-      <div class="item i4"><img class="category-icons" src="assets/icons/restaurants.png"></div>
-      <div class="item i1"><img class="category-icons" src="assets/icons/movies.png"></div>
-      <div class="item i2"><img class="category-icons" src="assets/icons/pubs.png"></div>
-      <div class="item i2"><img class="category-icons" src="assets/icons/shows.png"></div>
-      <div class="item i2"><img class="category-icons" src="assets/icons/travel.png"></div>
+    <div id="container">
+
     </div>
         
     
@@ -55,5 +47,6 @@
     <!--Packery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/categories.js"></script>
 </body>
 </html>

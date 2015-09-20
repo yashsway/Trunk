@@ -16,9 +16,17 @@
         $result = $fet->itemFetch($_POST['category']);
         echo json_encode($result);
     }
+    function fetchCats(){
+        def();
+        $cat = new Db();
+        $result = $cat->catsFetch();
+        echo json_encode($result);
+    }
     if((isset($_REQUEST['reqType']))==1){
         if($_REQUEST['reqType']==0){
             fetchItems();
+        }else if($_REQUEST['reqType']==1){
+            fetchCats();
         }
     }
 ?>

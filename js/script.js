@@ -21,10 +21,10 @@ function ajaxRequest(reqScript, returnDataType, reqData, callback){
 }
 //Page load
 $(document).ready(function(){
-    var request = {reqType:0};
+    /*var request = {reqType:0};
     ajaxRequest("databaseButler.php","json",request,function(returnedData){
         console.log(returnedData[0].name);
-    });
+    });*/
     
     //Packery initialize
     var $container = $('#main-panel').packery();
@@ -40,5 +40,6 @@ $(document).ready(function(){
       // bind Draggabilly events to Packery
       $container.packery( 'bindDraggabillyEvents', draggie );
     });
-
+    
+    
 });
