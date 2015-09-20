@@ -9,6 +9,7 @@
     position: fixed;
     height: 55px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.24);
+    z-index: 9999;
 }
 #title {
     font-size: 30px;
@@ -23,7 +24,7 @@
     position: fixed;
     bottom: 0px;
     left: 0px;
-    z-index: 150;
+    z-index: 9999;
     width: 100%;
     background-color: #301330;
     box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.30);
@@ -34,7 +35,10 @@
 }
 #main-panel {
     z-index: -100;
-    margin: 55px 0px 0px 10px;
+    margin-top: 70px;
+    margin-left: 5%;
+    width: 90%;
+    position: absolute;
 }
 .category-icons {
     width: 50px;
@@ -43,14 +47,9 @@
     margin-left: 25px;
     margin-top: 25px;
 }
-.item {
-  width: 100px;
-  height: 100px;
-  float: left;
-  opacity: 0.8;
-  /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);*/
+#container {
+    margin-top: 70px;
+    margin-left: 5%;
+    width: 90%;
+    position: absolute;
 }
-.item.i1 { background: #2EC4B6; }
-.item.i2 { background: #E71D36; }
-.item.i3 { background: #FF9F1C; }
-.item.i4 { background: #9BC53D; }

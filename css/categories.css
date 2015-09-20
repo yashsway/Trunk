@@ -1,0 +1,10 @@
+.item {
+/*  width: 118px;
+  height: 118px;*/
+  float: left;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+}
+.item.i1 { background: #2EC4B6; }
+.item.i2 { background: #E71D36; }
+.item.i3 { background: #FF9F1C; }
+.item.i4 { background: #9BC53D; }

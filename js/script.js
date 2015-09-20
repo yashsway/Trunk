@@ -25,20 +25,5 @@ $(document).ready(function(){
     ajaxRequest("databaseButler.php","json",request,function(returnedData){
         console.log(returnedData[0].name);
     });
-    
-    //Packery initialize
-    var $container = $('#main-panel').packery();
-    // init
-    $container.packery({
-      itemSelector: '.item',
-      gutter: 10
-    });
-    
-    $container.find('.item').each( function( i, itemElem ) {
-      // make element draggable with Draggabilly
-      var draggie = new Draggabilly( itemElem );
-      // bind Draggabilly events to Packery
-      $container.packery( 'bindDraggabillyEvents', draggie );
-    });
-
 });
+
