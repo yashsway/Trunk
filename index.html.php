@@ -27,15 +27,13 @@
 
 <body>
     <div class="main-text" id="header">
-        <p id="title">Trunk</p>
+        <a href="/index.html.php"><p id="title">Trunk</p></a>
     </div>
     <div id="container">
-
     </div>
     <?php
-        include 'stuff.html';
+        include 'list.html';
     ?>
-    
     <div class="main-text" id="footer">
         <p id="about">Team No Sleep @ Hack the North</p>
     </div>

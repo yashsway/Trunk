@@ -45,7 +45,7 @@ class Db {
     
     public function itemFetch($id){
         $ajaxQuery = $this->databaseConnection->prepare('SELECT * FROM items WHERE itemsKey = ?');
-        $ajaxQuery->bind_param("i",$id);
+        $ajaxQuery->bind_param("s",$id);
         $ajaxQuery->execute();
         
         if(!$ajaxQuery){
@@ -77,6 +77,18 @@ class Db {
             $assoc_result[] = $row;
         }
         return $assoc_result;
+    }
+    
+    public function itemNew($key,$lbl,$desc,$rtng){
+        $ajaxQuery = $this->databaseConnection->prepare('INSERT INTO items(itemsKey, label, description, rating) VALUES (?, ?, ?, ?)');
+        $ajaxQuery->bind_param("sssi",$key,$lbl,$desc,$rtng);
+        $ajaxQuery->execute();
+        
+        if(!$ajaxQuery){
+            return "Query fail";
+        }else{
+            return "Query pass";
+        }
     }
 }
 ?>

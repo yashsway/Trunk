@@ -1,15 +1,10 @@
 .item {
-<<<<<<< HEAD
   width: 100px;
   height: 100px;
-=======
-/*  width: 118px;
-  height: 118px;*/
->>>>>>> 0251d58d8345f5a1318e08e16251677417c621a7
   float: left;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
 }
-.item.i1 { background: #2EC4B6; }
-.item.i2 { background: #E71D36; }
-.item.i3 { background: #FF9F1C; }
-.item.i4 { background: #9BC53D; }
+.i1 { background: #2EC4B6; }
+.i2 { background: #E71D36; }
+.i3 { background: #FF9F1C; }
+.i4 { background: #9BC53D; }
