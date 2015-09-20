@@ -32,7 +32,9 @@
     <div id="container">
 
     </div>
-        
+    <?php
+        include 'stuff.html';
+    ?>
     
     <div class="main-text" id="footer">
         <p id="about">Team No Sleep @ Hack the North</p>

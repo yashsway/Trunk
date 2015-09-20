@@ -9,7 +9,7 @@
     position: fixed;
     height: 55px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.24);
-    z-index: 9999;
+    z-index: 1000;
 }
 #title {
     font-size: 30px;
@@ -34,7 +34,6 @@
     color: white;
 }
 #main-panel {
-    z-index: -100;
     margin-top: 70px;
     margin-left: 5%;
     width: 90%;
@@ -55,4 +54,8 @@
     margin-left: 5%;
     width: 90%;
     position: absolute;
+    z-index: 100;
+}
+.test {
+    display: none;
 }
