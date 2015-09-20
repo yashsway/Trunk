@@ -26,7 +26,7 @@ $(document).ready(function(){
         console.log(returnedData[0].name);
     });
     
-    //var $container = $('#container');
+    //Packery initialize
     var $container = $('#main-panel').packery();
     // init
     $container.packery({

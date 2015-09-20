@@ -43,7 +43,7 @@
         
     
     <div class="main-text" id="footer">
-        <p id="about">Team No Sleep @Hack the North</p>
+        <p id="about">Team No Sleep @ Hack the North</p>
     </div>
     
     <!--jQuery-->

@@ -42,5 +42,26 @@ class Db {
 
         return $assoc_result;
     }
+    
+    public function itemFetch($id){
+        $ajaxQuery = $this->databaseConnection->prepare('SELECT * FROM items WHERE itemsKey = ?');
+        $ajaxQuery->bind_param("i",$id);
+        $ajaxQuery->execute();
+        
+        if(!$ajaxQuery){
+             return false;
+        }
+        
+        /*$ajaxQuery->bind_result($na);
+        while($ajaxQuery->fetch()){
+             $assoc_result[0]['name'] = $na;
+        }*/
+        
+        $result = $ajaxQuery->get_result();
+        while($row=$result->fetch_assoc()){
+            $assoc_result[] = $row;
+        }
+        return $assoc_result;
+    }
 }
 ?>
