@@ -9,6 +9,7 @@
     position: fixed;
     height: 55px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.24);
+    z-index: 9999;
 }
 #title {
     font-size: 30px;
@@ -23,7 +24,7 @@
     position: fixed;
     bottom: 0px;
     left: 0px;
-    z-index: 150;
+    z-index: 9999;
     margin-bottom: 0px;
     width: 100%;
     background-color: #301330;
@@ -37,16 +38,9 @@
     z-index: 100;
 }
 #container {
-    top: 150px;
+    margin-top: 70px;
+    margin-left: 5%;
+    width: 90%;
     position: absolute;
 }
-.item {
-  width: 80px;
-  height: 80px;
-  float: left;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
-}
-.item.i1 { background: #2EC4B6; }
-.item.i2 { background: #E71D36; }
-.item.i3 { background: #FF9F1C; }
-.item.i4 { background: #9BC53D; }
+
