@@ -44,8 +44,11 @@
     width: 100px;
     height: 100px;
     position: absolute;
-    margin-left: 25px;
-    margin-top: 25px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 #container {
     margin-top: 70px;
